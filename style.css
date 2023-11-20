@@ -97,7 +97,7 @@
 ul{
     width: calc(100% - 60px);
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     overflow-y: scroll;
 }
 

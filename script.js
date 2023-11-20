@@ -21,7 +21,15 @@ function addTask(){
         li.appendChild(span);
 
         // rendering list item to html
-        listContainer.appendChild(li);
+        // listContainer.appendChild(li);
+        // above is the normal way of adding elements
+
+        // add the new task at the beggining of the list
+        // listContainer.insertBefore(li, listContainer.firstChild );
+
+        // or we can also use prepend 
+        listContainer.prepend(li);
+
         saveData();
     }
 
