@@ -10,8 +10,10 @@ function addTask(){
     }
     else{
         // creating list element 
+        let div = document.createElement("div");
+        div.innerHTML = input.value;
         let li = document.createElement("li");
-        li.innerHTML = input.value;         
+        li.appendChild(div); 
         
         // sending cross symbol into list item using span
         let span = document.createElement("span")

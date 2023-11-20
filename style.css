@@ -15,25 +15,37 @@
     --btn-clr: #ff5845;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    padding-block: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff5845;
+    border-radius: 10px;
+}
+
+
 .container{
     background: linear-gradient(to bottom right, rgb(1, 0, 75), rgb(93, 0, 121));
-    min-height: 100vh;
+    height: 100vh;
     overflow: hidden;
 }
 
 .box{
     background: white;
     overflow: hidden;
-    max-width: 600px;
+    max-width: 700px;
     margin-inline: auto;
-    margin-block: 50px;
+    margin-block: 40px;
     display: flex;
     row-gap: 20px;
     flex-direction: column;
     align-items: center;    
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     border-radius: 20px;
+    max-height: 90%;
 }
 
 .box h1{
@@ -84,6 +96,9 @@
 
 ul{
     width: calc(100% - 60px);
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: scroll;
 }
 
 ul li{
@@ -94,9 +109,14 @@ ul li{
     width: 100%;
     margin-block: 10px;
     padding-block: 10px;
-    padding-left: 50px;
+    padding-inline: 50px;
     position: relative;
     cursor: pointer;
+}
+
+ul li div{
+    width: 100%;
+    overflow-x: hidden;
 }
 
 ul li::before{
@@ -125,15 +145,56 @@ ul li.checked::before{
 ul li span{
     font-size: 1.5rem;
     position: absolute;
-    right: 30px;
+    right: 10px;
     bottom: 4px;
     padding-inline: 10px;
     border-radius: 50%;
-
 }
 
 ul li span:hover{
     background: var(--main-bg-clr);
+}
+
+@media screen and (max-width:780px) {
+    
+    .box{
+        width: 90%;
+    }
+
+    .box h1{
+        font-size: 1.6rem;
+    }
+
+    .main{
+        width: 95%;
+    }
+
+    .main input{
+        font-size: 0.9rem;
+        padding-left: 10px;
+        padding-right: 18%;
+        width: 100%;
+        
+    }
+
+    .main button{
+        padding-inline: 20px;
+        padding-block: 16px;
+        border-radius: 30px;
+        font-size: 0.9rem;
+    }
+
+    ul{
+        width: 95%;
+    }
+
+    ul li div {
+        font-size: 0.9rem;
+    }
+
+
+
+
 }
 
 
