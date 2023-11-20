@@ -165,6 +165,11 @@ ul li span:hover{
         font-size: 1.6rem;
     }
 
+    .box h1 img{
+        height: 30px;
+        width: 30px;
+    }
+
     .main{
         width: 95%;
     }
@@ -178,7 +183,7 @@ ul li span:hover{
     }
 
     .main button{
-        padding-inline: 20px;
+        padding-inline: 30px;
         padding-block: 16px;
         border-radius: 30px;
         font-size: 0.9rem;
@@ -192,8 +197,47 @@ ul li span:hover{
         font-size: 0.9rem;
     }
 
+}
 
+@media screen and (max-width: 450px) {
 
+    
+    .box h1{
+        font-size: 1.2rem;
+    }
+    
+    .box h1 img{
+        height: 25px;
+        width: 25px;
+    }
+
+    .main{
+        padding: 10px;
+    }
+
+    .main input{
+        font-size: 0.7rem;
+    }
+
+    .main button{
+        padding-block: 14px;
+        padding-inline: 25px;
+        font-size: 0.7rem;       
+    }
+
+    ul li div {
+        font-size: 0.7rem;
+    }
+
+    ul li::before{
+        height: 20px;
+        width: 20px;
+        top: 8px;    
+    }
+
+    ul li span{
+        bottom : 0px;
+    }
 
 }
 
