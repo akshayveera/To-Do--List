@@ -241,17 +241,17 @@ ul li span:hover{
     }
 
     ul li div {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     ul li::before{
         height: 20px;
         width: 20px;
-        top: 7px;    
+        top: 8px;    
     }
 
     ul li span{
-        bottom : -2px;
+        bottom : -1px;
     }
 
 }
